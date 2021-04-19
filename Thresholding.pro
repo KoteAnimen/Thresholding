@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     cameraconnection.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    threshold.cpp
 
 HEADERS += \
     cameraconnection.h \
-    mainwindow.h
+    mainwindow.h \
+    threshold.h
 
 FORMS += \
     mainwindow.ui
