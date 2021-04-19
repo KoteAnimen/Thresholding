@@ -10,12 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     cameraconnection.cpp \
+    houghcircle.cpp \
     main.cpp \
     mainwindow.cpp \
     threshold.cpp
 
 HEADERS += \
     cameraconnection.h \
+    houghcircle.h \
     mainwindow.h \
     threshold.h
 
