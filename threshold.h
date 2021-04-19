@@ -9,7 +9,13 @@ class Threshold : public QObject
 {
     Q_OBJECT
 public:
-    Threshold();    
+    Threshold();
+    int C;
+
+    void setC(double c)
+    {
+        C = c;
+    }
 
 signals:
     void setImage(cv::Mat);

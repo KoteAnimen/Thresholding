@@ -47,3 +47,8 @@ void MainWindow::ThresholdPaint(cv::Mat src)
     delete CamImg;
 }
 
+
+void MainWindow::on_slider_valueChanged(int value)
+{
+    thresh->setC(value);
+}

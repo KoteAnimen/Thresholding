@@ -8,6 +8,8 @@ Threshold::Threshold()
 void Threshold::workThresholding(cv::Mat src)
 {
     cv::Mat threshImage;
-    cv::adaptiveThreshold(src, threshImage, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY, 11, 2);
+    cv::Mat blur;
+    cv::GaussianBlur(src, blur, {5,5}, 0);
+    cv::threshold(blur, threshImage,0,255,cv::THRESH_BINARY+cv::THRESH_OTSU);
     emit setImage(threshImage);
 }
