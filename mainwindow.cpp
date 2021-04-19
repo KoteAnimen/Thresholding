@@ -65,9 +65,3 @@ void MainWindow::CirclesPaint(cv::Mat src)
     emit getFrame();
     delete CamImg;
 }
-
-
-void MainWindow::on_slider_valueChanged(int value)
-{
-    thresh->setC(value);
-}

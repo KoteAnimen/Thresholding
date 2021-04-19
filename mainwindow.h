@@ -36,7 +36,6 @@ public slots:
    void Paint(cv::Mat);
    void ThresholdPaint(cv::Mat);
    void CirclesPaint(cv::Mat);
-private slots:
-   void on_slider_valueChanged(int value);
+
 };
 #endif // MAINWINDOW_H
